@@ -1,0 +1,134 @@
+---
+title: "Estado de un Pase"
+description: "Comprende qué significa cada estado de un Pase Digital y cómo actuar en cada caso."
+---
+
+# Estado de un Pase
+
+Cada Pase Digital pasa por diferentes estados durante su ciclo de vida.
+
+Estos estados permiten conocer rápidamente en qué etapa se encuentra un usuario y si existe alguna acción pendiente.
+
+![Screenshot 2026 07 09 At 19 02 33](/images/Screenshot-2026-07-09-at-19.02.33.png)
+
+---
+
+## Estados disponibles
+
+### Creando
+
+El sistema de Alara se encuentra **generando** el Pase Digital en segundo plano.
+
+Este proceso normalmente dura sólo unos **segundos**.
+
+Una vez finalizado, el estado cambiará automáticamente a **Emitido**.
+
+> Es normal observar este estado inmediatamente después de crear un nuevo Pase.
+
+---
+
+### Emitido
+
+El Pase Digital fue generado correctamente.
+
+Sin embargo, el usuario **todavía no lo ha agregado a Apple Wallet o Google Wallet**.
+
+El pase ya existe y está listo para instalarse.
+
+#### ¿Qué significa?
+
+El usuario aún no recibe:
+
+- Actualizaciones automáticas.
+- Notificaciones Push.
+- Cambios en tiempo real.
+
+#### Posibles causas
+
+- El usuario aún no ha abierto el enlace.
+- Cerró la página antes de instalar el Pase.
+- En programas de lealtad, el usuario pudo haber completado el formulario de registro, pero olvidó presionar **Agregar a Wallet** para instalar su Pase Digital.
+
+<Tip>
+  Si observas una gran cantidad de pases en estado **Emitido**, puede ser recomendable enviar una campaña recordando a los usuarios que agreguen su Pase Digital a Wallet.
+</Tip>
+
+---
+
+### Activo
+
+El usuario ya **instaló** correctamente su Pase Digital.
+
+Este es el estado esperado para usuarios que utilizan la plataforma.
+
+Mientras el Pase permanezca activo podrá:
+
+- Recibir Notificaciones Push.
+- Recibir actualizaciones automáticas.
+- Acumular sellos, puntos o recompensas.
+- Utilizar el Pase para accesos, membresías o programas de lealtad.
+- Sincronizar cualquier cambio realizado desde el Dashboard.
+
+<Info>
+  La mayoría de tus usuarios deberían encontrarse en este estado (Activo).
+</Info>
+
+---
+
+### Desinstalado
+
+El usuario tenía **previamente instalado** su Pase Digital, pero posteriormente lo **eliminó** de su Wallet.
+
+Como consecuencia:
+
+- Ya no recibirá Notificaciones Push.
+- Ya no recibirá actualizaciones del Pase.
+- Será necesario volver a instalar el Pase para recuperar todas las funcionalidades.
+
+---
+
+### Eliminado
+
+El estado **Eliminado** tiene el mismo significado práctico que **Desinstalado**.
+
+Indica que el Pase Digital ya no se encuentra instalado en el dispositivo del usuario.
+
+---
+
+### Error al crear
+
+Ocurrió un error durante la generación del Pase Digital.
+
+Este tipo de errores son poco frecuentes y normalmente **requieren** revisión por parte del equipo de Alara.
+
+<Warning>
+  Si un Pase permanece en estado **Error al crear**, comunícate con el equipo de soporte escribiendo a [**administracion@alaramx.com**](mailto:administracion@alaramx.com) para que podamos revisar el caso.
+</Warning>
+
+---
+
+## Resumen de estados
+
+| **Estado** | **Significado** | **Requiere acción** |
+| --- | --- | --- |
+| **Creando** | El sistema está generando el Pase Digital. | Esperar unos segundos. |
+| **Emitido** | El Pase ya existe, pero aún no ha sido agregado a Wallet. | Invitar al usuario a instalarlo. |
+| **Activo** | El Pase está instalado y funcionando correctamente. | No. |
+| **Desinstalado** | El usuario eliminó el Pase de su Wallet. | Reinstalar el Pase si desea volver a utilizarlo. |
+| **Eliminado** | El Pase ya no se encuentra instalado en Wallet. | Reinstalar el Pase si es necesario. |
+| **Error al crear** | Ocurrió un error durante la creación del Pase. | Contactar al equipo de Alara. |
+
+---
+
+## Buenas prácticas
+
+- Revisa periódicamente la cantidad de pases en estado **Emitido**.
+- Mantén la mayoría de tus usuarios en estado **Activo**.
+- Investiga cualquier Pase que permanezca en estado **Creando** durante varios minutos.
+- Reporta inmediatamente cualquier Pase en estado **Error al crear** al equipo de Alara.
+
+---
+
+## Siguiente paso
+
+En la siguiente sección aprenderás a **reenviar o eliminar un Pase Digital**, así como las situaciones en las que cada acción es recomendable.

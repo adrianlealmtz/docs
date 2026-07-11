@@ -1,0 +1,210 @@
+---
+title: "Problemas Comunes (FAQ)"
+description: "Encuentra soluciones rápidas a las dudas y problemas más frecuentes al utilizar el Dashboard de Alara."
+---
+
+# Problemas Comunes (FAQ)
+
+A continuación encontrarás las preguntas más comunes sobre el Dashboard de Alara y cómo resolverlas.
+
+---
+
+## No puedo agregar un pase a Apple Wallet o Google Wallet
+
+Verifica lo siguiente:
+
+- El pase se encuentra en estado **Activo**.
+- El usuario está abriendo el enlace desde un dispositivo compatible.
+- El enlace del pase no ha sido modificado.
+- El dispositivo cuenta con conexión a Internet.
+
+Si el problema continúa, intenta abrir nuevamente el enlace desde el botón **Copiar link** dentro del detalle del pase.
+
+---
+
+## El usuario eliminó su pase del Wallet
+
+No es necesario emitir un pase nuevo.
+
+Simplemente:
+
+1. Busca y abre el pase desde el Dashboard.
+2. Copia el enlace de descarga.
+3. Envíalo nuevamente al usuario.
+
+El usuario podrá volver a instalar exactamente el mismo pase.
+
+---
+
+## El escaneo aparece como "Pass\_Suspended"
+
+Esto significa que el pase ya no existe dentro del Wallet del usuario.
+
+Las causas más comunes son:
+
+- El usuario eliminó el pase de su Wallet.
+- El usuario únicamente conservó una captura de pantalla del código QR.
+- El pase nunca fue agregado al Wallet.
+
+La solución es volver a compartir el enlace del pase para que el usuario lo instale nuevamente.
+
+---
+
+## El escaneo aparece como "Double\_Scan"
+
+El pase fue escaneado recientemente y la plataforma bloqueó un nuevo acceso dentro del tiempo de validación configurado.
+
+Cada cuenta tiene un tiempo mínimo entre escaneos para evitar accesos duplicados.
+
+Si necesitas modificar ese tiempo de validación, comunícate con el equipo de Alara.
+
+---
+
+## El pase no se actualiza o el usuario no recibe notificaciones push
+
+Si un pase deja de actualizarse (por ejemplo, no aparecen nuevos sellos, cambia información o no llegan notificaciones push), normalmente se debe a alguno de estos motivos:
+
+- El dispositivo no tiene conexión a Internet.
+- El usuario desactivó los datos para Apple Wallet.
+- El pase fue eliminado del Wallet.
+- El dispositivo tiene activado el modo avión o restricciones de red.
+
+### Verifica que Apple Wallet tenga acceso a datos móviles
+
+En iPhone:
+
+1. Abre **Configuración**.
+2. Entra en **Datos celulares**.
+3. Desplázate hasta encontrar **Wallet**.
+4. Asegúrate de que el interruptor esté activado.
+
+Con esta opción **desactivada**, Apple Wallet no podrá:
+
+- Recibir actualizaciones del pase.
+- Mostrar nuevos sellos o cambios realizados desde el Dashboard.
+- Recibir notificaciones push del pase.
+- Sincronizar información con los servidores de Alara cuando el usuario utilice datos móviles.
+
+<Info>
+  Si el usuario está conectado a una red Wi-Fi con acceso a Internet, el pase podrá actualizarse normalmente aunque los datos móviles de Wallet estén desactivados.
+</Info>
+
+<Tip>
+  Si después de activar los datos móviles el pase sigue sin actualizarse, pide al usuario abrir el pase una vez dentro de Apple Wallet y verificar que el dispositivo tenga conexión a Internet.
+</Tip>
+
+## No puedo encontrar un pase
+
+Utiliza el buscador dentro de la sección **Pases**.
+
+Puedes buscar utilizando:
+
+- Nombre del usuario.
+- ID del pase.
+- Campos personalizados.
+
+También puedes utilizar los filtros por estado o fecha.
+
+---
+
+## Un pase aparece como Suspendido
+
+Los pases suspendidos no podrán utilizarse hasta ser reactivados.
+
+Si el cambio no fue intencional, comunícate con un administrador de la cuenta o con el equipo de soporte de Alara.
+
+---
+
+## No llegan las notificaciones push
+
+Antes de revisar un problema, verifica que:
+
+- La audiencia contiene usuarios.
+- Los pases están activos.
+- La notificación fue programada correctamente.
+- La fecha y hora de envío ya ocurrieron.
+
+Recuerda que las notificaciones **no se envían inmediatamente**. Siempre deben programarse con al menos **10 minutos de anticipación**.
+
+---
+
+## Mi audiencia no encuentra usuarios
+
+Revisa cuidadosamente las condiciones configuradas.
+
+Las audiencias solamente incluyen usuarios que cumplan **todas** las reglas establecidas.
+
+Un filtro incorrecto puede provocar que la audiencia no tenga resultados.
+
+---
+
+## Los cambios en un pase no aparecen inmediatamente
+
+Algunas modificaciones pueden tardar unos segundos en sincronizarse con Apple Wallet o Google Wallet.
+
+Si después de unos minutos el cambio no aparece, solicita al usuario abrir nuevamente el pase para forzar la actualización.
+
+---
+
+## El usuario no recibió los sellos
+
+Verifica que:
+
+- El pase correcto fue seleccionado.
+- El ajuste se aplicó correctamente.
+- No existan restricciones configuradas por automatizaciones.
+
+También puedes revisar el total de sellos directamente desde el detalle del pase.
+
+---
+
+## ¿Puedo recuperar un pase eliminado?
+
+No.
+
+Una vez eliminado un pase, no puede recuperarse.
+
+Si únicamente deseas impedir que el usuario lo utilice, considera suspenderlo o compartir nuevamente el enlace de instalación, según el caso.
+
+<Warning>
+  Eliminar un pase es una acción permanente.
+</Warning>
+
+---
+
+## ¿Puedo enviar una notificación a un solo usuario?
+
+Sí.
+
+Abre el pase correspondiente y utiliza la sección **Enviar notificación** dentro del panel lateral.
+
+La notificación será enviada únicamente al propietario de ese pase.
+
+---
+
+## ¿Puedo editar la información de un cliente?
+
+Sí.
+
+Desde el detalle del pase puedes:
+
+- Editar los campos visibles del pase.
+- Agregar información adicional.
+- Actualizar datos almacenados en la base de datos.
+- Guardar nuevos campos personalizados.
+
+---
+
+## ¿Qué sucede si un usuario cambia de teléfono?
+
+Mientras conserve su misma cuenta de Apple o Google, normalmente podrá volver a instalar el pase utilizando el enlace de descarga.
+
+Si eliminó el pase, simplemente vuelve a compartir el enlace desde el Dashboard.
+
+---
+
+## ¿Necesitas ayuda?
+
+Si tu duda no aparece en esta lista o experimentas un comportamiento inesperado, comunícate con el equipo de soporte de Alara.
+
+Entre más información nos compartas (capturas de pantalla, nombre del pase, hora del evento o descripción del problema), más rápido podremos ayudarte a resolverlo.

@@ -1,0 +1,123 @@
+---
+title: "Interpretar Resultados"
+description: "Aprende a interpretar los resultados de cada escaneo y detectar posibles incidencias."
+---
+
+# Interpretar Resultados
+
+La sección **Escaneos** registra toda la actividad realizada por tus lectores NFC o códigos QR.
+
+Cada registro representa un intento de **acceso, validación, check-in** o **interacción** con un Pase Digital.
+
+![Screenshot 2026 07 10 At 17 21 53](/images/Screenshot-2026-07-10-at-17.21.53.png)
+
+---
+
+## Estado del escaneo
+
+Cada registro mostrará un estado que indica si la validación fue exitosa o si ocurrió algún problema.
+
+### Exitoso
+
+El Pase Digital fue validado correctamente.
+
+Esto significa que:
+
+- El Pase es válido.
+- Cumple con las reglas de validación.
+- El usuario pudo completar correctamente su acceso o check-in.
+
+---
+
+### Fallido
+
+El escaneo no pudo completarse.
+
+Cuando esto ocurre, la columna **Razón** mostrará el motivo específico del rechazo.
+
+---
+
+## Razones de un escaneo fallido
+
+Dependiendo de la configuración de tu cuenta, pueden existir diferentes motivos por los cuales un escaneo sea rechazado.
+
+### DOUBLE\_SCAN
+
+El Pase ya había sido escaneado anteriormente y todavía no ha transcurrido el tiempo mínimo permitido para volver a utilizarlo.
+
+Por ejemplo:
+
+- Un boleto de acceso que solo permite una entrada.
+- Una membresía configurada para permitir únicamente un acceso cada cierto tiempo.
+
+El tiempo entre escaneos se configura individualmente para cada cliente.
+
+Puede establecerse en:
+
+- Segundos
+- Minutos
+- Horas
+
+<Info>
+  Si necesitas **aumentar o reducir el tiempo permitido entre escaneos**, comunícate con el equipo de Alara para realizar el ajuste en tu cuenta.
+</Info>
+
+---
+
+### PASS\_SUSPENDED
+
+El Pase ya no se encuentra instalado en el dispositivo del usuario.
+
+Esto normalmente ocurre cuando:
+
+- El usuario eliminó el Pase Digital de su Wallet.
+- El usuario únicamente conservó una captura de pantalla del código QR.
+- El usuario nunca llegó a agregar el Pase Digital a Apple Wallet o Google Wallet.
+
+En estos casos el sistema bloqueará automáticamente el acceso para evitar el uso de capturas de pantalla o códigos previamente descargados.
+
+<Tip>
+  Si el usuario eliminó accidentalmente su Pase Digital, puedes reenviarle nuevamente el enlace de instalación desde la sección **Reenviar un Pase**.
+</Tip>
+
+---
+
+## Interpretar la información
+
+Al analizar la tabla podrás identificar rápidamente distintos escenarios.
+
+Por ejemplo:
+
+- Una gran cantidad de escaneos **Exitosos** indica que el sistema está funcionando correctamente.
+- Varios registros con **DOUBLE\_SCAN** suelen significar que un usuario intentó escanear su pase varias veces dentro del periodo de validación permitido.
+- Registros frecuentes con **PASS\_SUSPENDED** pueden indicar que algunos usuarios **eliminaron** su Pase Digital o intentan utilizar únicamente una captura de pantalla.
+
+---
+
+## Analiza los resultados con filtros
+
+Puedes **combinar** los filtros para encontrar información específica.
+
+<Frame>
+  <img
+    src="/images/Screenshot-2026-07-10-at-17.23.32.png"
+    alt="Screenshot 2026 07 10 At 17 23 32"
+    title="Screenshot 2026 07 10 At 17 23 32"
+    style={{ width:"58%" }}
+  />
+</Frame>
+
+Por ejemplo:
+
+- Ver únicamente escaneos fallidos.
+- Consultar la actividad de un lector específico.
+- Revisar los accesos realizados durante una fecha determinada.
+- Buscar el historial completo de un usuario o Pase Digital.
+
+Esto facilita la detección de incidencias y el seguimiento de cualquier evento registrado.
+
+---
+
+## Siguiente paso
+
+En la siguiente sección aprenderás a consultar los **Últimos Escaneos**, donde podrás monitorear en tiempo real toda la actividad registrada por tus lectores.

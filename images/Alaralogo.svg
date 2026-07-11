@@ -1,0 +1,51 @@
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1428.9 947.38">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 84.2px;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        letter-spacing: .92em;
+      }
+
+      .cls-5 {
+        letter-spacing: .94em;
+      }
+
+      .cls-6 {
+        letter-spacing: .94em;
+      }
+
+      .cls-7 {
+        letter-spacing: .93em;
+      }
+
+      .cls-2 {
+        font-size: 18px;
+      }
+
+      .cls-8 {
+        letter-spacing: .08em;
+      }
+
+      .cls-9 {
+        letter-spacing: .08em;
+      }
+    </style>
+  </defs>
+  <rect width="1428.9" height="947.38"/>
+  <text class="cls-1" transform="translate(548.22 673.48)"><tspan class="cls-8" x="0" y="0">A</tspan><tspan class="cls-9" x="70.81" y="0">L</tspan><tspan class="cls-8" x="128.49" y="0">ARA</tspan></text>
+  <text class="cls-2" transform="translate(546.87 705.29)"><tspan class="cls-5" x="0" y="0">T</tspan><tspan class="cls-7" x="27.97" y="0">E</tspan><tspan class="cls-6" x="56.86" y="0">CHNO</tspan><tspan class="cls-4" x="181.73" y="0">L</tspan><tspan class="cls-6" x="209.23" y="0">OGIES</tspan></text>
+  <path class="cls-3" d="M853.16,561.27h.08c7.59,0,13.63-6.32,13.31-13.9-4.45-105.23-56.63-322.55-150.74-322.55s-148.89,217.71-153.47,322.84c-.32,7.42,5.58,13.62,13.01,13.62h.33c7.21,0,13.05-5.63,13.37-12.76,3.96-88.47,47.06-244.24,126.76-244.24s120.31,155.73,124.04,244.21c.3,7.15,6.15,12.8,13.31,12.8Z"/>
+  <path class="cls-3" d="M852.55,561.27h0c8.03,0,14.26-7.04,13.22-15-8.01-61.39-59.7-175.93-149.95-175.93s-144.42,114.99-152.67,176.26c-1.05,7.77,5.02,14.67,12.86,14.67h.33c6.69,0,12.36-4.85,13.24-11.42,6.33-47.03,49.17-125.85,126.24-125.85s117.53,78.7,123.54,125.74c.84,6.61,6.53,11.53,13.2,11.53Z"/>
+</svg>

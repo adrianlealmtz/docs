@@ -1,0 +1,123 @@
+---
+title: "Métricas Principales"
+description: "Comprende los principales indicadores del Dashboard y cómo interpretar el estado de los Pases Digitales."
+---
+
+# Métricas
+
+El Panel de Control muestra una vista rápida del estado general de tu plataforma mediante cuatro indicadores principales.
+
+Estos valores se actualizan automáticamente conforme los usuarios interactúan con sus Pases Digitales.
+
+![Screenshot 2026 07 09 At 18 29 15](/images/Screenshot-2026-07-09-at-18.29.15.png)
+
+---
+
+## Pases Emitidos
+
+Muestra el número **total** de Pases Digitales creados para tu organización.
+
+Este indicador considera **todos** los pases generados, sin importar su estado actual.
+
+Los pases emitidos pueden corresponder a:
+
+- Membresías
+- Tarjetas de lealtad
+- Cupones
+- Tickets
+- ID's digitales
+
+<Info>
+  Este valor representa el **histórico** **total** **de pases** generados para la organización seleccionada.
+</Info>
+
+---
+
+## Pases Activos
+
+Indica la cantidad de Pases Digitales que actualmente se encuentran **instalados** en Apple Wallet o Google Wallet.
+
+Un pase activo puede:
+
+- Recibir actualizaciones en tiempo real.
+- Recibir notificaciones push.
+- Utilizar funciones NFC ó QR.
+- Realizar check-ins.
+- Acceder a promociones, membresías y beneficios.
+
+<Info>
+  Un pase **Activo** significa que el usuario **ya agregó correctamente su Pase Digital a su Wallet** y puede utilizar todas sus funcionalidades.
+</Info>
+
+---
+
+## Pases Inactivos
+
+Corresponde al total de pases que actualmente **no** pueden utilizarse.
+
+Esto incluye diferentes estados del Pase Digital.
+
+### Estados posibles
+
+| Estado | Descripción |
+| --- | --- |
+| **Creando** | El sistema de Alara está **generando** el Pase Digital. Normalmente este estado dura sólo unos segundos antes de cambiar automáticamente a **Emitido**. |
+| **Emitido** | El pase fue creado correctamente, pero el usuario todavía **no lo ha agregado** a Apple Wallet o Google Wallet. |
+| **Activo** | El usuario ya instaló el pase en su Wallet y **puederecibir** actualizaciones, notificaciones push y utilizar todas las funcionalidades disponibles. |
+| **Desinstalado** | El usuario agregó el pase a su Wallet, pero posteriormente lo **eliminó** manualmente de su dispositivo. |
+| **Eliminado** | Equivale al estado **Desinstalado**. El Pase Digital ya no se encuentra instalado en el dispositivo del usuario. |
+| **Error al crear** | Ocurrió un **error** durante la creación del Pase Digital y requiere revisión por parte del equipo de Alara. |
+
+<Warning>
+  Si uno o varios pases permanecen con el estado **Error al crear**, comunícate con el equipo de Alara enviando un correo a [**administracion@alaramx.com**](mailto:administracion@alaramx.com) para que podamos revisar el caso.
+</Warning>
+
+---
+
+## Escaneos Totales
+
+Representa el número total de validaciones realizadas durante el periodo seleccionado.
+
+Dependiendo de la implementación de tu organización, un escaneo puede corresponder a:
+
+- Validaciones NFC.
+- Escaneos de código QR.
+- Check-ins.
+- Control de acceso.
+- Validación de boletos.
+- Registro de asistencia.
+
+<Info>
+  Este indicador cambia **automáticamente** al modificar el filtro de fechas del Dashboard.
+</Info>
+
+---
+
+## Interpretación de las métricas
+
+Estas métricas permiten **conocer** rápidamente el **estado general** de la plataforma.
+
+Por ejemplo:
+
+- Un incremento en **Pases Emitidos** indica crecimiento en la cantidad de usuarios.
+- Una mayor cantidad de **Pases Activos** refleja que más usuarios tienen instalado su Pase Digital.
+- Un aumento en **Escaneos Totales** normalmente representa una mayor interacción con la plataforma.
+- Una cantidad considerable de pases en estado **Emitido** puede indicar que aún hay usuarios pendientes de agregar su Pase Digital a Wallet.
+
+<Info>
+  En programas de lealtad, es común que algunos usuarios completen correctamente el formulario de registro o la landing page para generar su Pase Digital, pero no finalicen el último paso de presionar **"Agregar a Wallet"**. En estos casos, el pase ya fue emitido por la plataforma, pero permanecerá en estado **Emitido** hasta que el usuario lo instale en su dispositivo.
+</Info>
+
+<Tip>
+  Revisar estas métricas periódicamente permite monitorear la adopción de los Pases Digitales y detectar posibles incidencias de forma temprana.
+</Tip>
+
+<Tip>
+  Si detectas una cantidad elevada de pases en estado **Emitido**, considera enviar un recordatorio a tus usuarios para que completen la instalación de su Pase Digital en Apple Wallet o Google Wallet.
+</Tip>
+
+---
+
+## Siguiente paso
+
+Continúa con la siguiente sección para aprender cómo utilizar los **Filtros de Fechas** y analizar las métricas en distintos periodos.

@@ -1,0 +1,203 @@
+---
+title: "Crear Audiencias"
+description: "Aprende a crear audiencias dinámicas utilizando reglas y condiciones para enviar Notificaciones Push únicamente a los usuarios que cumplan ciertos criterios."
+---
+
+# Audiencias
+
+Las **Audiencias** permiten agrupar automáticamente usuarios con **características en común** para reutilizarlas al enviar Notificaciones Push.
+
+En lugar de seleccionar usuarios manualmente, **defines** una serie de condiciones y Alara actualizará esa audiencia **automáticamente** conforme cambien los datos de tus pases.
+
+---
+
+## ¿Qué es una audiencia?
+
+Una audiencia es un **grupo dinámico de pases** que **cumplen** **una** o **varias** condiciones.
+
+Por ejemplo:
+
+- Usuarios con 2 sellos.
+- Clientes con 5 sellos.
+- Usuarios cuyo pase está Activo.
+- Personas registradas con un correo específico.
+- Clientes registrados después de cierta fecha.
+
+Una vez creada, la audiencia **podrá seleccionarse** al momento de programar una Notificación Push.
+
+---
+
+## Crear una audiencia
+
+Para crear una nueva audiencia:
+
+1. Ve a **Audiencias**.
+2. Haz clic en **Nueva Audiencia**.
+3. Escribe un nombre descriptivo.
+4. Agrega las condiciones que deberán cumplir los usuarios.
+5. Guarda la audiencia.
+
+![Screenshot 2026 07 10 At 17 47 37](/images/Screenshot-2026-07-10-at-17.47.37.png)
+
+---
+
+## Asignar un nombre
+
+El nombre sirve únicamente para **identificar** la audiencia dentro del Dashboard.
+
+<Frame>
+  ![Screenshot 2026 07 10 At 17 49 18](/images/Screenshot-2026-07-10-at-17.49.18.png)
+</Frame>
+
+Ejemplos:
+
+- Clientes VIP
+- Usuarios con 5 sellos
+- Membresías Activas
+- Clientes Monterrey
+
+Utiliza nombres **claros** para encontrarlos fácilmente al programar campañas.
+
+---
+
+## Crear condiciones
+
+Cada audiencia se construye mediante reglas.
+
+Primero selecciona el campo que deseas evaluar.
+
+Algunos ejemplos de campos disponibles son:
+
+- Nombre
+- Email
+- Status
+- Sellos
+- Pass ID
+- Fecha de creación
+- Última actualización
+- Cualquier campo personalizado de tu Pase
+
+Después **selecciona** el operador correspondiente.
+
+Ejemplos:
+
+- es
+- contains
+- es alguno de
+- tiene cualquier valor
+
+Finalmente escribe el valor que deseas buscar.
+
+---
+
+## Ejemplo práctico
+
+Supongamos que deseas enviar una promoción únicamente a los usuarios que tienen **5 sellos**.
+
+La condición sería:
+
+| Campo | Operador | Valor |
+| --- | --- | --- |
+| Sellos | es | 5 |
+
+Todos los usuarios que tengan **exactamente 5 sellos** formarán parte automáticamente de esa audiencia.
+
+---
+
+## Crear varias condiciones
+
+Puedes agregar tantas condiciones como necesites utilizando **Añadir condición**.
+
+Por ejemplo:
+
+| Campo | Operador | Valor |
+| --- | --- | --- |
+| Status | es | Activo |
+| Sellos | es | 5 |
+
+En este caso, **únicamente** pertenecerán a la audiencia los usuarios que:
+
+- tengan el pase activo, **y**
+- cuenten con exactamente cinco sellos.
+
+---
+
+## Vista previa en vivo
+
+Mientras agregas condiciones, el panel derecho muestra una **vista previa** de la audiencia.
+
+<Frame>
+  <img
+    src="/images/Screenshot-2026-07-10-at-17.49.45.png"
+    alt="Screenshot 2026 07 10 At 17 49 45"
+    title="Screenshot 2026 07 10 At 17 49 45"
+    style={{ width:"50%" }}
+  />
+</Frame>
+
+Esta vista permite **conocer** aproximadamente:
+
+- cuántos usuarios cumplen las condiciones;
+- algunos ejemplos de pases que pertenecen a esa audiencia.
+
+Esto **facilita** validar que la segmentación sea correcta antes de guardarla.
+
+---
+
+## Guardar la audiencia
+
+Cuando las condiciones sean correctas, haz clic en **Guardar audiencia**.
+
+La audiencia quedará disponible para **utilizarse** en cualquier **Notificación Push** futura.
+
+No es necesario volver a crearla cada vez.
+
+---
+
+## Casos de uso
+
+<CardGroup cols={2}>
+  <Card title="Recordar continuar acumulando sellos">
+    Crea una audiencia para usuarios con **1 o 2 sellos** y envíales una notificación invitándolos a regresar para seguir acumulando recompensas.
+  </Card>
+
+  <Card title="Premio listo para reclamar">
+    Crea una audiencia con usuarios que ya alcanzaron el número de sellos necesario para obtener una recompensa.
+  </Card>
+
+  <Card title="Clientes VIP">
+    Agrupa únicamente usuarios con cierto nivel de membresía o información personalizada para enviar promociones exclusivas.
+  </Card>
+
+  <Card title="Campañas segmentadas">
+    Utiliza cualquier campo almacenado en la base de datos para enviar mensajes únicamente a un grupo específico de usuarios.
+  </Card>
+</CardGroup>
+
+---
+
+## Buenas prácticas
+
+<Tip>
+  Crea audiencias **reutilizables** en lugar de enviar campañas a todos los usuarios.
+
+  Mientras más segmentada sea una campaña, **mejores resultados** suelen obtenerse.
+</Tip>
+
+---
+
+## Ejemplo recomendado
+
+Para un programa de lealtad, una excelente estrategia consiste en crear una audiencia con usuarios que tengan **1 o 2 sellos**.
+
+Posteriormente puedes enviarles una notificación como:
+
+> "Ya comenzaste tu tarjeta. Regresa y sigue acumulando sellos para obtener tu próxima recompensa."
+
+Este tipo de campañas ayuda a incrementar la frecuencia de visitas y mejorar la participación de los usuarios en el programa de lealtad.
+
+---
+
+## Siguiente paso
+
+Ahora que ya sabes crear audiencias, aprenderás cómo utilizarlas al momento de **programar una Notificación Push** para enviar mensajes únicamente a los usuarios que cumplan esas condiciones.

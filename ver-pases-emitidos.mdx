@@ -1,0 +1,252 @@
+---
+title: "Ver Pases Emitidos"
+description: "Consulta, filtra y administra todos los Pases Digitales emitidos desde tu Dashboard."
+---
+
+# Pases Emitidos
+
+La sección **Pases** concentra todos los Pases Digitales creados para tu cuenta.
+
+<Frame>
+  ![Screenshot 2026 07 10 At 17 12 27](/images/Screenshot-2026-07-10-at-17.12.27.png)
+</Frame>
+
+Desde aquí puedes consultar el estado de cada pase, buscar usuarios específicos, aplicar filtros, revisar información relevante y acceder rápidamente a funciones como **Check-In** o **Agregar sellos.**
+
+---
+
+## ¿Qué información muestra?
+
+Cada fila representa un Pase Digital **emitido**.
+
+Dependiendo de la configuración de tu cuenta, podrás **visualizar** columnas como:
+
+- Nombre del usuario.
+- Estado del pase.
+- ID del Pase.
+- Botón de Check-In.
+- Sellos acumulados (programas de lealtad).
+- Campos personalizados de tu implementación.
+
+<Info>
+  Las columnas visibles pueden **variar** dependiendo de las funcionalidades contratadas para tu cuenta.
+</Info>
+
+---
+
+## Buscar un Pase
+
+En la parte superior encontrarás el campo **Buscar**.
+
+Desde aquí puedes **localizar** rápidamente un pase escribiendo parte del:
+
+- Nombre del usuario.
+- Correo electrónico (si aplica).
+- ID del Pase.
+- Información disponible dentro de la tabla.
+
+La búsqueda se actualiza automáticamente mientras escribes.
+
+---
+
+## Filtrar los resultados
+
+Además del buscador, puedes filtrar la información utilizando distintos criterios.
+
+<Frame>
+  ![Screenshot 2026 07 10 At 17 13 56](/images/Screenshot-2026-07-10-at-17.13.56.png)
+</Frame>
+
+Actualmente es posible **filtrar** por:
+
+- Estado.
+- Fecha de creación.
+- Última actualización.
+
+Estos filtros pueden utilizarse de forma **individual** o **combinarse** para obtener resultados más específicos.
+
+---
+
+## Estados disponibles
+
+Cada Pase Digital puede encontrarse en alguno de los siguientes estados.
+
+### Creando
+
+El sistema de Alara se encuentra **generando** el Pase Digital.
+
+Este estado normalmente dura sólo unos segundos antes de cambiar automáticamente a **Emitido**.
+
+---
+
+### Emitido
+
+El Pase Digital ya fue **creado** correctamente.
+
+Sin embargo, el usuario **todavía no lo ha agregado a Apple Wallet o Google Wallet**.
+
+Esto significa que el pase está listo para instalarse.
+
+---
+
+### Activo
+
+El usuario ya **agregó** exitosamente su Pase Digital a Wallet.
+
+Mientras el pase permanezca **activo** podrá:
+
+- **Recibir** actualizaciones automáticas.
+- **Recibir** Notificaciones Push.
+- **Acumular** sellos, puntos o beneficios.
+- **Utilizar** el Pase Digital para accesos, membresías o programas de lealtad.
+
+Este es el estado esperado para un usuario que ya utiliza la plataforma.
+
+---
+
+### Desinstalado
+
+El usuario agregó previamente el Pase Digital a su Wallet, pero posteriormente lo **eliminó** de su dispositivo.
+
+En este estado el pase **deja** de recibir:
+
+- Actualizaciones.
+- Notificaciones Push.
+- Cambios en tiempo real.
+
+---
+
+### Eliminado
+
+Tiene el mismo significado práctico que **Desinstalado**.
+
+Indica que el Pase Digital ya no se encuentra instalado en el dispositivo del usuario.
+
+---
+
+### Error al crear
+
+Ocurrió un **error** durante la generación del Pase Digital.
+
+Este tipo de errores normalmente requieren revisión por parte del equipo de Alara.
+
+<Warning>
+  Si un pase permanece en estado **Error al crear**, comunícate con el equipo de soporte escribiendo a [**administracion@alaramx.com**](mailto:administracion@alaramx.com) para que podamos revisar el caso.
+</Warning>
+
+---
+
+## Botón Check-In
+
+Cuando la funcionalidad está habilitada, cada Pase Digital cuenta con un botón **Check-In**./
+
+<Frame>
+  ![Screenshot 2026 07 10 At 17 14 40](/images/Screenshot-2026-07-10-at-17.14.40.png)
+</Frame>
+
+Este permite registrar **manualmente** el acceso del usuario **sin necesidad** de utilizar un lector NFC o Scanner QR.
+
+Esta función suele utilizarse como **respaldo** o para registrar accesos desde el Dashboard.
+
+---
+
+## Columna de Sellos (Estampas)
+
+En cuentas que utilizan programas de lealtad, la columna **Estampas** muestra la cantidad de sellos acumulados por cada usuario.
+
+<Frame>
+  ![Screenshot 2026 07 10 At 17 15 46](/images/Screenshot-2026-07-10-at-17.15.46.png)
+</Frame>
+
+Esto permite conocer rápidamente el progreso de cada cliente dentro de su tarjeta de recompensas.
+
+---
+
+## Crear un Pase
+
+En la esquina superior derecha encontrarás el botón **Crear Pase**.
+
+Desde esta opción podrás emitir nuevos Pases Digitales **manualmente** cuando tu implementación lo permita.
+
+<Frame>
+  ![Screenshot 2026 07 10 At 17 16 37](/images/Screenshot-2026-07-10-at-17.16.37.png)
+</Frame>
+
+> Algunas cuentas generan los pases automáticamente mediante integraciones o formularios, por lo que esta opción **puede variar** según la configuración de tu proyecto.
+
+---
+
+## Personalizar columnas
+
+El botón **Columnas** permite elegir qué información deseas visualizar dentro de la tabla.
+
+<Frame>
+  <img
+    src="/images/Screenshot-2026-07-09-at-18.58.46.png"
+    alt="Screenshot 2026 07 09 At 18 58 46"
+    title="Screenshot 2026 07 09 At 18 58 46"
+    style={{ width:"72%" }}
+  />
+</Frame>
+
+Esto facilita adaptar la vista según las necesidades de cada operación.
+
+El botón **Columnas**, ubicado en la esquina superior derecha de la tabla, permite personalizar la información que deseas visualizar.
+
+Cada usuario puede activar o desactivar columnas según las necesidades de su operación, facilitando una vista más limpia y enfocada.<br />
+
+---
+
+## Columnas disponibles
+
+Dependiendo de las funcionalidades habilitadas para tu cuenta, podrás visualizar diferentes columnas dentro de la tabla de Pases.
+
+Algunos ejemplos incluyen:
+
+- Nombre del usuario.
+- Estado del Pase.
+- ID del Pase.
+- Última actualización.
+- Check-In.
+- Estampas o Sellos acumulados.
+- Campos personalizados de tu implementación.
+- Información adicional configurada específicamente para tu empresa.
+
+<Info>
+  Las columnas disponibles **pueden** **variar** entre clientes, ya que el Dashboard de Alara es altamente configurable y se adapta a las funcionalidades contratadas por cada implementación.
+</Info>
+
+---
+
+## Ejemplo: Columna de Sellos
+
+Si tu empresa utiliza un programa de lealtad mediante **Stamp Cards**, puedes habilitar la columna **Sellos** para visualizar cuántas estampas ha acumulado cada usuario.
+
+Esto permite:
+
+- **Consultar** rápidamente el progreso de cada cliente.
+- **Detectar** usuarios próximos a recibir una recompensa.
+- Dar **seguimiento** al uso del programa de lealtad sin necesidad de abrir cada Pase Digital.
+
+<Tip>
+  Conforme Alara incorpore nuevas funcionalidades a tu cuenta, es posible que **aparezcan** nuevas columnas disponibles para activarlas desde este mismo menú.
+</Tip>
+
+---
+
+## Recomendaciones
+
+- **Utiliza** el buscador para localizar usuarios rápidamente.
+- **Combina** filtros para encontrar grupos específicos de pases.
+- **Revisa** periódicamente los pases en estado **Emitido**, ya que pueden corresponder a usuarios que aún no han agregado su Pase Digital a Wallet.
+- Si detectas múltiples pases en estado **Error al crear**, contacta al equipo de Alara para una revisión.
+
+<Tip>
+  Si administras un programa de lealtad y observas muchos pases en estado **Emitido**, es posible que algunos usuarios hayan completado el formulario de registro pero olvidaron presionar el botón **Agregar a Wallet** para instalar su Pase Digital.
+</Tip>
+
+---
+
+## Siguiente paso
+
+En la siguiente sección aprenderás a utilizar el buscador avanzado para localizar rápidamente un Pase Digital específico dentro de tu plataforma.

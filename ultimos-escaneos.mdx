@@ -1,0 +1,187 @@
+---
+title: "Últimos Escaneos"
+description: "Consulta la actividad más reciente registrada por tus lectores NFC y comprende el motivo de cada escaneo exitoso o fallido."
+---
+
+# Últimos Escaneos
+
+La sección **Últimos Escaneos** muestra en tiempo real los eventos más recientes registrados por tus lectores NFC y códigos QR.
+
+Es una herramienta ideal para supervisar la operación diaria, validar accesos y detectar cualquier incidencia de manera inmediata.
+
+![Image](/images/image.png)
+
+---
+
+## Información disponible
+
+Cada registro representa un intento de **acceso** o **validación** realizado por un usuario.
+
+Dependiendo de tu implementación, podrás **visualizar** información como:
+
+- Nombre del usuario.
+- Estado del escaneo.
+- Fecha y hora.
+- ID del Pase.
+- Lector utilizado.
+- Razón del resultado.
+- Campos personalizados del Pase.
+
+<Info>
+  Las columnas disponibles **pueden variar** dependiendo del tipo de proyecto implementado en tu cuenta.
+</Info>
+
+---
+
+## Buscar un escaneo
+
+Puedes localizar rápidamente un registro utilizando el buscador ubicado en la parte superior.
+
+<Frame>
+  <img
+    src="/images/Screenshot-2026-07-10-at-17.24.56.png"
+    alt="Screenshot 2026 07 10 At 17 24 56"
+    title="Screenshot 2026 07 10 At 17 24 56"
+    style={{ width:"62%" }}
+  />
+</Frame>
+
+Es posible buscar utilizando:
+
+- Nombre del usuario.
+- ID del Pase.
+- Nombre o número del lector.
+
+Esto facilita encontrar rápidamente un escaneo específico.
+
+---
+
+## Filtrar resultados
+
+Puedes filtrar los registros para visualizar únicamente la información que necesitas.
+
+<Frame>
+  <img
+    src="/images/Screenshot-2026-07-10-at-17.25.23.png"
+    alt="Screenshot 2026 07 10 At 17 25 23"
+    title="Screenshot 2026 07 10 At 17 25 23"
+    style={{ width:"66%" }}
+  />
+</Frame>
+
+Los filtros disponibles incluyen:
+
+- Estado.
+- Lector.
+- Fecha.
+
+Los filtros pueden combinarse entre sí para obtener resultados más específicos.
+
+---
+
+## Personalizar columnas
+
+La tabla permite mostrar u ocultar columnas según tus necesidades.
+
+Presiona el botón **Columnas** para seleccionar únicamente la información que deseas visualizar.
+
+<img
+  src="/images/Screenshot-2026-07-10-at-11.23.49.png"
+  alt="Screenshot 2026 07 10 At 11 23 49"
+  title="Screenshot 2026 07 10 At 11 23 49"
+  className="mr-auto"
+  style={{ width:"67%" }}
+/>
+
+Dependiendo de tu implementación **podrás** mostrar columnas como:
+
+- Nombre
+- Estado
+- Razón
+- Fecha
+- ID del Pase
+- Lector
+- Campos personalizados
+
+<Tip>
+  Ocultar columnas innecesarias **facilita** la supervisión cuando existen cientos o miles de registros diarios.
+</Tip>
+
+---
+
+# Estados del escaneo
+
+Cada escaneo registra un resultado.
+
+## Exitoso
+
+El Pase Digital fue validado correctamente y cumplió con todas las reglas configuradas para tu cuenta.
+
+No requiere ninguna acción adicional.
+
+---
+
+## Fallido
+
+El escaneo fue rechazado porque alguna regla de validación impidió completar la operación.
+
+El motivo exacto puede consultarse en la columna **Razón**.
+
+---
+
+# Razones más comunes
+
+## DOUBLE\_SCAN
+
+Significa que el mismo Pase Digital fue escaneado nuevamente antes de que terminara el tiempo de espera configurado para tu cuenta.
+
+Esto **evita** que un mismo Pase pueda utilizarse varias veces de forma consecutiva.
+
+Cada cliente tiene una **configuración distinta.**
+
+El tiempo mínimo entre escaneos puede configurarse en:
+
+- Segundos.
+- Minutos.
+- Horas.
+
+<Info>
+  Si necesitas aumentar o disminuir el tiempo permitido entre escaneos, **comunícate** con el equipo de Alara para ajustar la configuración de tu cuenta.
+</Info>
+
+---
+
+## PASS\_SUSPENDED
+
+Este estado indica que el Pase Digital **ya no se encuentra instalado** en Apple Wallet o Google Wallet.
+
+Esto normalmente sucede cuando:
+
+- El usuario eliminó su Pase Digital de Wallet.
+- El usuario únicamente tomó una captura de pantalla del código QR e intentó utilizarla.
+- El usuario nunca terminó el proceso de instalación en Wallet.
+
+En estos casos el usuario deberá volver a instalar su Pase Digital utilizando su enlace original.
+
+<Warning>
+  Por seguridad, los códigos QR capturados mediante una captura de pantalla no sustituyen un Pase Digital instalado en Wallet.
+</Warning>
+
+---
+
+# Recomendaciones
+
+Si detectas una cantidad elevada de escaneos fallidos:
+
+- Revisa la columna **Razón** para identificar el motivo.
+- Verifica que el usuario tenga instalado su Pase Digital.
+- Confirma que el lector esté funcionando correctamente.
+- Revisa que el usuario cumpla con las reglas de acceso configuradas.
+
+Si el comportamiento no es el esperado, **comunícate** con el equipo de Alara para recibir asistencia.
+
+---
+
+## Siguiente paso
+
+En la siguiente sección aprenderás a crear y administrar **Notificaciones Push**, permitiendo enviar mensajes directamente a los usuarios que tengan instalado su Pase Digital.
