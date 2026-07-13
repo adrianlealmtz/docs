@@ -1,0 +1,252 @@
+---
+title: "Diseño de Pases de Lealtad"
+description: "Aprende cómo diseñar un Pase de Lealtad para Apple Wallet y Google Wallet, cómo funcionan los Banner Images dinámicos y cuáles son las especificaciones de cada Asset."
+---
+
+# Diseño de Pases de Lealtad
+
+Los Pases de Lealtad de Alara están diseñados para ser completamente dinámicos.
+
+A diferencia de una tarjeta física o una imagen estática, el contenido del pase puede cambiar automáticamente conforme el usuario avanza dentro de su programa de lealtad.
+
+Esto permite mostrar distintos diseños, recompensas, promociones o cambios de estatus sin que el usuario tenga que volver a descargar su pase.
+
+<Info>
+  Gracias a nuestra integración oficial con Apple Wallet y Google Wallet, Alara puede actualizar automáticamente el diseño y contenido del pase conforme ocurren eventos como la acumulación de sellos, cambio de nivel o desbloqueo de recompensas.
+</Info>
+
+---
+
+# ¿Cómo funciona?
+
+Cada Banner Image representa un estado diferente del pase.
+
+Cuando el usuario obtiene un nuevo sello, Alara actualiza automáticamente el Banner Image correspondiente.
+
+Por ejemplo, en una tarjeta de **10 sellos**, normalmente existirán **11 imágenes**.
+
+| Imagen | Estado del pase |
+| --- | --- |
+| Imagen 0 | Tarjeta recién instalada (0 sellos) |
+| Imagen 1 | 1 sello |
+| Imagen 2 | 2 sellos |
+| Imagen 3 | 3 sellos |
+| ... | ... |
+| Imagen 10 | 10 sellos / recompensa final |
+
+De esta manera el usuario siempre visualiza el progreso real de su tarjeta.
+
+---
+
+# Ejemplo
+
+En el siguiente ejemplo se muestra un programa de lealtad de **10 sellos**.
+
+Cada Banner Image representa un estado distinto del pase.
+
+> _(Aquí puedes colocar la imagen con los 10 banners que mostraste anteriormente.)_
+
+---
+
+# No siempre debe seguir un orden
+
+Aunque normalmente existe una imagen para cada cantidad de sellos, esto **no es obligatorio**.
+
+Puedes cambiar el Banner Image en cualquier momento mediante reglas o automatizaciones.
+
+Algunos ejemplos:
+
+- Mostrar un premio sorpresa.
+- Mostrar un descuento desbloqueado.
+- Mostrar un banner temporal por temporada.
+- Mostrar un mensaje de cumpleaños.
+- Mostrar un diseño especial para Navidad.
+- Mostrar una promoción limitada.
+
+El cambio del Banner Image depende completamente de la lógica que definas para tu programa.
+
+<Tip>
+  Muchos de nuestros clientes utilizan un Banner Image completamente distinto cuando el usuario desbloquea una recompensa. Esto genera una sensación de logro mucho mayor que simplemente agregar otro sello.
+</Tip>
+
+---
+
+# Recompensas dinámicas
+
+Una excelente práctica consiste en cambiar completamente el diseño del pase cuando el usuario obtiene una recompensa.
+
+Por ejemplo:
+
+- Los primeros cinco sellos muestran únicamente el progreso.
+- Al llegar al sello 5 aparece un Banner Image anunciando el premio ganado.
+- Después de canjear el premio, el pase continúa normalmente hacia la siguiente recompensa.
+
+Esto hace que el programa sea mucho más atractivo para el usuario.
+
+---
+
+# Assets del Pase
+
+Un Pase Digital está compuesto por varios Assets.
+
+Cada uno tiene una función distinta dentro de Apple Wallet y Google Wallet.
+
+---
+
+# Banner Image
+
+El Banner Image es la imagen principal del pase.
+
+Se muestra en la parte superior de la tarjeta y normalmente representa el estado actual del programa de lealtad.
+
+### Especificaciones
+
+- Resolución recomendada: **3720 × 1476 px**
+- Relación: **1860 × 738 px (3x recomendado)**
+- Mantener siempre la misma proporción.
+
+<Info>
+  Todos los Banner Images de un mismo programa deben tener exactamente las mismas dimensiones para evitar cambios de tamaño entre estados.
+</Info>
+
+---
+
+# Logo
+
+El Logo aparece en la parte superior izquierda del pase.
+
+Generalmente corresponde al logotipo de tu marca.
+
+### Especificaciones
+
+- Hasta **960 px** de ancho.
+- Altura flexible.
+
+Si el logotipo es demasiado ancho, Apple Wallet ocultará parte de la información del encabezado.
+
+<Tip>
+  Recomendamos utilizar versiones horizontales del logotipo con fondo transparente.
+</Tip>
+
+---
+
+# Icon
+
+El Icon es utilizado principalmente para:
+
+- Notificaciones Push.
+- Centro de notificaciones.
+- Pantalla bloqueada.
+- Algunas vistas previas del pase.
+
+### Especificaciones
+
+- Resolución mínima: **720 × 720 px**
+- Relación: **1:1**
+- Fondo transparente recomendado.
+
+---
+
+# Color del Pase
+
+Además de las imágenes, también puedes modificar el color general del pase.
+
+Esto permite diferenciar distintos niveles dentro de un mismo programa.
+
+Por ejemplo:
+
+- Bronce
+- Silver
+- Gold
+- Platinum
+- VIP
+
+Muchas marcas utilizan distintos colores para comunicar visualmente el nivel del cliente.
+
+---
+
+# Tutorial: Crear un Pase de 10 Sellos
+
+Una forma sencilla de comenzar consiste en crear todos los estados del programa desde el inicio.
+
+## Paso 1
+
+Diseña el Banner Image inicial.
+
+Este será el pase que verá el usuario al instalarlo por primera vez.
+
+No contiene sellos activos.
+
+---
+
+## Paso 2
+
+Duplica ese diseño.
+
+Ahora activa únicamente el primer sello.
+
+Guarda esta imagen como:
+
+**Imagen 1**
+
+---
+
+## Paso 3
+
+Duplica nuevamente el diseño.
+
+Ahora activa los dos primeros sellos.
+
+Guárdala como:
+
+**Imagen 2**
+
+---
+
+## Paso 4
+
+Repite el proceso hasta completar todos los estados del programa.
+
+---
+
+## Paso 5
+
+Diseña las imágenes especiales para las recompensas.
+
+Aquí puedes aprovechar para cambiar completamente el diseño del Banner Image y comunicar claramente el premio desbloqueado.
+
+Por ejemplo:
+
+- ¡Ganaste un café gratis!
+- ¡15% OFF desbloqueado!
+- ¡Recompensa lista para canjear!
+
+Estas imágenes suelen generar una mejor experiencia para el usuario que simplemente continuar mostrando sellos.
+
+---
+
+# Buenas prácticas
+
+<CardGroup cols={2}>
+  <Card title="Mantén un mismo estilo">
+    Todos los Banner Images deben compartir la misma identidad visual.
+  </Card>
+
+  <Card title="Destaca las recompensas">
+    Cuando exista un premio, cambia completamente el Banner Image para llamar la atención.
+  </Card>
+
+  <Card title="Utiliza pocos textos">
+    Los usuarios deben comprender el estado del pase en pocos segundos.
+  </Card>
+
+  <Card title="Diseña pensando en el progreso">
+    Cada nuevo sello debe transmitir sensación de avance hacia la siguiente recompensa.
+  </Card>
+</CardGroup>
+
+---
+
+<Success>
+  Los mejores programas de lealtad no solo acumulan sellos; cuentan una historia visual. Aprovecha los Banner Images dinámicos para sorprender a tus clientes, comunicar recompensas y hacer que cada visita se sienta como un nuevo logro.
+</Success>
