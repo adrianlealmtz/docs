@@ -90,6 +90,14 @@
         ]
       },
       {
+        "group": "Diseño de Pases",
+        "pages": [
+          "pases-de-lealtad",
+          "pases-de-tickets",
+          "pases-de-ids-digitales"
+        ]
+      },
+      {
         "group": "Configuración",
         "pages": [
           "informacion-del-cliente",
@@ -109,14 +117,6 @@
         "pages": [
           "lealtad",
           "untitled-page"
-        ]
-      },
-      {
-        "group": "Diseño de Pases",
-        "pages": [
-          "pases-de-lealtad",
-          "pases-de-tickets",
-          "pases-de-ids-digitales"
         ]
       }
     ]
