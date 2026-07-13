@@ -1,0 +1,60 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 564.33 816.37">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        letter-spacing: .94em;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5 {
+        font-size: 30.28px;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7 {
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: .94em;
+      }
+
+      .cls-4 {
+        letter-spacing: .93em;
+      }
+
+      .cls-5 {
+        letter-spacing: .92em;
+      }
+
+      .cls-6 {
+        letter-spacing: .08em;
+      }
+
+      .cls-6, .cls-7 {
+        font-size: 141.65px;
+      }
+
+      .cls-7 {
+        letter-spacing: .08em;
+      }
+    </style>
+  </defs>
+  <g class="cls-1">
+    <text class="cls-7" transform="translate(2.27 754.8)"><tspan x="0" y="0">A</tspan></text>
+    <text class="cls-7" transform="translate(121.4 754.8)"><tspan x="0" y="0">L</tspan></text>
+    <text class="cls-6" transform="translate(218.44 754.8)"><tspan x="0" y="0">ARA</tspan></text>
+  </g>
+  <g class="cls-1">
+    <text class="cls-3" transform="translate(0 808.32)"><tspan x="0" y="0">T</tspan></text>
+    <text class="cls-4" transform="translate(47.06 808.32)"><tspan x="0" y="0">E</tspan></text>
+    <text class="cls-3" transform="translate(95.66 808.32)"><tspan x="0" y="0">CHNO</tspan></text>
+    <text class="cls-5" transform="translate(305.73 808.32)"><tspan x="0" y="0">L</tspan></text>
+    <text class="cls-2" transform="translate(352 808.32)"><tspan x="0" y="0">OGIES</tspan></text>
+  </g>
+  <path d="M515.28,566.02h.13c12.77,0,22.93-10.63,22.39-23.38C530.32,365.61,442.54,0,284.21,0S33.73,366.26,26.03,543.13c-.54,12.48,9.39,22.91,21.89,22.91h.56c12.13,0,21.95-9.47,22.49-21.47,6.66-148.84,79.17-410.9,213.25-410.9s202.4,261.99,208.68,410.85c.5,12.03,10.35,21.53,22.39,21.53v-.03Z"/>
+  <path d="M514.26,566.02h0c13.51,0,23.99-11.84,22.24-25.24-13.48-103.28-100.44-295.97-252.27-295.97S41.27,438.27,27.39,541.34c-1.77,13.07,8.45,24.68,21.63,24.68h.56c11.25,0,20.79-8.16,22.27-19.21,10.65-79.12,82.72-211.72,212.38-211.72s197.73,132.4,207.84,211.54c1.41,11.12,10.99,19.4,22.21,19.4h-.02Z"/>
+</svg>

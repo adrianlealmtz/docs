@@ -7,7 +7,10 @@
     "light": "#fe5b25",
     "dark": "#fe5b25"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/logoalara2.svg",
+    "dark": "/images/logoalara2.svg"
+  },
   "navigation": {
     "pages": [
       {
@@ -21,14 +24,14 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Sobre Alara",
+          "icon": "people-group",
+          "href": "https://alaramx.com/about"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Casos de Éxito",
+          "icon": "star",
+          "href": "https://alaramx.com/casos"
         }
       ]
     },
@@ -91,7 +94,6 @@
         "pages": [
           "informacion-del-cliente",
           "feature-flags",
-          "untitled-page",
           "equipo-y-usuarios"
         ]
       },
@@ -112,8 +114,9 @@
     ]
   },
   "logo": {
-    "light": "/images/Alaralogo.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logoalara2.svg",
+    "dark": "/images/logoalaradark.svg",
+    "href": "https://www.alaramx.com"
   },
   "navbar": {
     "links": [],
@@ -148,5 +151,9 @@
   },
   "fonts": {
     "family": "Inter"
-  }
+  },
+  "thumbnails": {
+    "background": "/images/bites4.png"
+  },
+  "description": "Documentación oficial de Alara Technologies. Aprende a administrar Pases Digitales, programas de lealtad, control de acceso, ticketing, notificaciones push, automatizaciones y todas las herramientas del Dashboard de Alara."
 }
