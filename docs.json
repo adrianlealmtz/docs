@@ -122,8 +122,8 @@
     ]
   },
   "logo": {
-    "light": "/images/logoalara2.svg",
-    "dark": "/images/logoalaradark.svg",
+    "light": "/images/AlaraLogo.png",
+    "dark": "/images/AlaraLogoBW.png",
     "href": "https://www.alaramx.com"
   },
   "navbar": {
