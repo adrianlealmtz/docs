@@ -8,8 +8,8 @@
     "dark": "#fe5b25"
   },
   "favicon": {
-    "light": "/images/logoalara2.svg",
-    "dark": "/images/logoalara2.svg"
+    "light": "/images/favicon.png",
+    "dark": "/images/favicon.png"
   },
   "navigation": {
     "pages": [
