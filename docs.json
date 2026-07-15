@@ -105,6 +105,13 @@
         ]
       },
       {
+        "group": "Tips",
+        "pages": [
+          "lealtad",
+          "untitled-page"
+        ]
+      },
+      {
         "group": "Configuración",
         "pages": [
           "informacion-del-cliente",
@@ -117,13 +124,6 @@
         "pages": [
           "problemas-comunes",
           "soporte"
-        ]
-      },
-      {
-        "group": "Tips",
-        "pages": [
-          "lealtad",
-          "untitled-page"
         ]
       }
     ]
