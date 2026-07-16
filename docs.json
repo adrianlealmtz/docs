@@ -42,8 +42,7 @@
           {
             "group": "Inicio",
             "pages": [
-              "index",
-              "quickstart",
+              "equipo-y-usuarios-1",
               "navegacion-general"
             ]
           },
@@ -127,13 +126,6 @@
             "pages": [
               "problemas-comunes",
               "soporte"
-            ]
-          },
-          {
-            "group": "Getting Started",
-            "pages": [
-              "index",
-              "quickstart"
             ]
           }
         ]
