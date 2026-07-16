@@ -40,9 +40,9 @@
         "tab": "Dashboard",
         "groups": [
           {
-            "group": "Inicio",
+            "group": "Dashboard",
             "pages": [
-              "equipo-y-usuarios-1",
+              "introduccion",
               "navegacion-general"
             ]
           },
