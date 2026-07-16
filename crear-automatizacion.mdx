@@ -1,0 +1,301 @@
+---
+title: "Funcionamiento"
+description: "Crea reglas inteligentes para automatizar notificaciones, recompensas y acciones dentro de tus pases."
+---
+
+# Automatizaciones
+
+Las **Automatizaciones** permiten ejecutar acciones automáticamente cuando se cumple una condición específica.
+
+En lugar de enviar notificaciones o entregar recompensas **manualmente**, puedes configurar reglas que funcionen de forma completamente **automática**.
+
+Cada automatización se lee como una frase:
+
+> **Cuando** sucede una condición → **Entonces** ejecuta una o varias acciones.
+
+Una vez activada, la automatización seguirá funcionando hasta que sea desactivada.
+
+---
+
+## ¿Cómo funciona una automatización?
+
+Todas las reglas siguen la misma estructura.
+
+<CardGroup cols={2}>
+  <Card title="Cuando..." icon="clock">
+    Define qué evento debe ocurrir para disparar la automatización.
+  </Card>
+
+  <Card title="Entonces..." icon="bolt">
+    Define una o varias acciones que se ejecutarán automáticamente.
+  </Card>
+</CardGroup>
+
+Por ejemplo:
+
+> **Cuando** un usuario tenga **14 días sin visitar** la sucursal → **Entonces** enviar una notificación Push con un descuento del 15%.
+
+---
+
+# Tipos de automatizaciones
+
+Actualmente el Dashboard permite **crear reglas** utilizando cualquiera de los siguientes disparadores.
+
+---
+
+## Inactividad
+
+La automatización se ejecuta cuando un usuario deja de visitar tu negocio durante cierta cantidad de días.
+
+Es ideal para recuperar clientes antes de perderlos.
+
+### Casos de uso
+
+- Reactivar clientes.
+- Recordar beneficios pendientes.
+- Recuperar usuarios inactivos.
+- Enviar promociones después de varios días sin visitar.
+
+**Ejemplo**
+
+> Cuando un usuario tenga **14 días sin actividad** → enviar una notificación ofreciendo un beneficio especial.
+
+---
+
+## Visitas seguidas
+
+Detecta **cuando** un usuario visita tu negocio durante varios días consecutivos.
+
+Es una excelente herramienta para gamificar programas de lealtad.
+
+Puedes activar la opción **Reiniciar al cumplir** para comenzar nuevamente el contador después de entregar la recompensa.
+
+### Casos de uso
+
+- Premiar constancia.
+- Motivar visitas frecuentes.
+- Entregar recompensas automáticamente.
+
+**Ejemplo**
+
+> Cuando un usuario complete **5 visitas seguidas** → regalar un café.
+
+---
+
+## Fecha
+
+Dispara una acción utilizando cualquier **campo de fecha** almacenado dentro del pase.
+
+Puede repetirse:
+
+- Cada día
+- Cada semana
+- Cada mes
+- Cada año
+- Una sola vez
+
+También puedes ejecutar la acción algunos días antes o después de la fecha.
+
+### Casos de uso
+
+- Cumpleaños.
+- Renovaciones.
+- Membresías.
+- Eventos.
+- Aniversarios.
+
+**Ejemplo**
+
+> Cada año, el día del **cumpleaños** → enviar un cupón especial.
+
+---
+
+## Hora exacta
+
+Ejecuta una acción cierta cantidad de minutos, horas o días antes de una fecha específica.
+
+Es especialmente útil para eventos y ticketing.
+
+### Casos de uso
+
+- Recordatorio un día antes.
+- Apertura de puertas.
+- Inicio del evento.
+- Recordatorios de registro.
+
+**Ejemplo**
+
+> Una hora antes del evento → enviar una notificación recordando que el pase ya está listo.
+
+---
+
+# Acciones disponibles
+
+Cuando una condición se cumple, puedes agregar una o varias acciones.
+
+<CardGroup cols={2}>
+  <Card title="Notificación Push" icon="bell">
+    Envía automáticamente una notificación al usuario.
+
+    Ideal para promociones, recordatorios o información importante.
+  </Card>
+
+  <Card title="Modificar Campo" icon="pen">
+    Actualiza automáticamente cualquier campo del pase.
+
+    Por ejemplo:
+
+    - Estatus
+    - Nivel
+    - Fecha
+    - Membresía
+    - Información personalizada
+  </Card>
+
+  <Card title="Ajustar Lealtad" icon="badge-percent">
+    Agrega o elimina sellos automáticamente.
+
+    También puede reiniciar el progreso o completar un programa.
+  </Card>
+
+  <Card title="Asignar Recompensa" icon="gift">
+    Entrega automáticamente una recompensa al usuario.
+
+    Ideal para cupones, regalos o beneficios especiales.
+  </Card>
+</CardGroup>
+
+---
+
+# Encadenar varias acciones
+
+Una automatización **no está limitada** a una sola acción.
+
+Puedes agregar **varias** acciones que se ejecutarán en el orden en que fueron configuradas.
+
+Por ejemplo:
+
+> **Cuando** un usuario tenga **30 días sin visitar**
+
+**Entonces**
+
+1. Enviar una notificación Push.
+2. Asignar un cupón del 15%.
+
+Todo ocurrirá **automáticamente**.
+
+---
+
+# Ejemplos de automatizaciones
+
+## Reactivación
+
+**Cuando**
+
+14 días sin actividad.
+
+**Entonces**
+
+> ¡Te extrañamos! Vuelve esta semana y recibe un 15% OFF.
+
+---
+
+## Cumpleaños
+
+**Cuando**
+
+Cada año utilizando el campo **Birthday**.
+
+**Entonces**
+
+> ¡Feliz cumpleaños! Hoy tienes un regalo esperándote.
+
+---
+
+## Cliente frecuente
+
+**Cuando**
+
+5 visitas seguidas.
+
+**Entonces**
+
+- Asignar recompensa.
+- Enviar Push.
+- Reiniciar el contador.
+
+---
+
+## Recordatorio de evento
+
+**Cuando**
+
+1 hora antes del evento.
+
+**Entonces**
+
+> Nos vemos en una hora. Tu boleto ya está listo en Apple Wallet.
+
+---
+
+## Apertura de puertas
+
+**Cuando**
+
+30 minutos antes.
+
+**Entonces**
+
+> Las puertas abrirán en 30 minutos.
+
+---
+
+## Inicio del evento
+
+**Cuando**
+
+Hora exacta del evento.
+
+**Entonces**
+
+> El evento está por comenzar. Presenta tu pase al ingresar.
+
+---
+
+# Buenas prácticas
+
+<Tip>
+  Utiliza nombres **descriptivos** para tus automatizaciones.
+
+  Ejemplos:
+
+  - Cumpleaños
+  - 14 días sin venir
+  - 5 visitas seguidas
+  - Antes de abrir puertas
+  - Inicio del evento
+
+  Esto facilitará administrar decenas de reglas en el futuro.
+</Tip>
+
+<CardGroup cols={2}>
+  <Card title="Mantén una regla por objetivo" icon="check">
+    Cada automatización debe resolver un único objetivo específico.
+  </Card>
+
+  <Card title="Evita duplicar mensajes" icon="alert">
+    No crees varias automatizaciones que envíen notificaciones al mismo tiempo al mismo usuario.
+  </Card>
+
+  <Card title="Prueba antes de activar" icon="flask-conical">
+    Verifica siempre la condición, el mensaje y la recompensa antes de habilitar la regla.
+  </Card>
+
+  <Card title="Combina varias acciones" icon="git-branch">
+    Una sola automatización puede enviar una Push, asignar una recompensa y actualizar el pase automáticamente.
+  </Card>
+</CardGroup>
+
+<Warning>
+  Las Notificaciones Push enviadas mediante automatizaciones también respetan el tiempo mínimo interno de procesamiento de Alara para garantizar una entrega confiable a todos los dispositivos.
+</Warning>

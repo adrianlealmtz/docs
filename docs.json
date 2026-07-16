@@ -35,95 +35,107 @@
         }
       ]
     },
-    "groups": [
+    "tabs": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      },
-      {
-        "group": "Inicio",
-        "pages": [
-          "index",
-          "quickstart",
-          "navegacion-general"
-        ]
-      },
-      {
-        "group": "Panel de Control",
-        "pages": [
-          "resumen-del-dashboard",
-          "metricas-principales",
-          "filtros-de-fechas",
-          "actividad-reciente",
-          "heatmap"
-        ]
-      },
-      {
-        "group": "Pases",
-        "pages": [
-          "ver-pases-emitidos",
-          "buscar-un-pase",
-          "estado-de-un-pase",
-          "reenviar-o-revocar-pase",
-          "informacion-de-un-pase",
-          "agregar-o-restar-sellos",
-          "administrar"
-        ]
-      },
-      {
-        "group": "Escaneos",
-        "pages": [
-          "ver-escaneos",
-          "interpretar-resultados",
-          "ultimos-escaneos"
-        ]
-      },
-      {
-        "group": "Audiencias",
-        "pages": [
-          "crear-audiencias"
-        ]
-      },
-      {
-        "group": "Notificaciones Push",
-        "pages": [
-          "crear-notificacion-push",
-          "programar-notificacion",
-          "individual",
-          "buenas-practicas"
-        ]
-      },
-      {
-        "group": "Diseño de Pases",
-        "pages": [
-          "pases-de-lealtad",
-          "pases-de-tickets",
-          "pases-de-ids-digitales"
-        ]
-      },
-      {
-        "group": "Tips",
-        "pages": [
-          "lealtad",
-          "untitled-page"
-        ]
-      },
-      {
-        "group": "Configuración",
-        "pages": [
-          "informacion-del-cliente",
-          "feature-flags",
-          "equipo-y-usuarios"
-        ]
-      },
-      {
-        "group": "FAQ",
-        "pages": [
-          "problemas-comunes",
-          "soporte"
+        "tab": "Dashboard",
+        "groups": [
+          {
+            "group": "Inicio",
+            "pages": [
+              "index",
+              "quickstart",
+              "navegacion-general"
+            ]
+          },
+          {
+            "group": "Panel de Control",
+            "pages": [
+              "resumen-del-dashboard",
+              "metricas-principales",
+              "filtros-de-fechas",
+              "actividad-reciente",
+              "heatmap"
+            ]
+          },
+          {
+            "group": "Pases",
+            "pages": [
+              "ver-pases-emitidos",
+              "buscar-un-pase",
+              "estado-de-un-pase",
+              "reenviar-o-revocar-pase",
+              "informacion-de-un-pase",
+              "agregar-o-restar-sellos",
+              "administrar"
+            ]
+          },
+          {
+            "group": "Escaneos",
+            "pages": [
+              "ver-escaneos",
+              "interpretar-resultados",
+              "ultimos-escaneos"
+            ]
+          },
+          {
+            "group": "Audiencias",
+            "pages": [
+              "crear-audiencias"
+            ]
+          },
+          {
+            "group": "Automatizaciones",
+            "pages": [
+              "crear-automatizacion",
+              "automatizacion"
+            ]
+          },
+          {
+            "group": "Notificaciones Push",
+            "pages": [
+              "crear-notificacion-push",
+              "programar-notificacion",
+              "individual",
+              "buenas-practicas"
+            ]
+          },
+          {
+            "group": "Diseño de Pases",
+            "pages": [
+              "pases-de-lealtad",
+              "pases-de-tickets",
+              "pases-de-ids-digitales"
+            ]
+          },
+          {
+            "group": "Tips",
+            "pages": [
+              "lealtad",
+              "untitled-page"
+            ]
+          },
+          {
+            "group": "Configuración",
+            "pages": [
+              "informacion-del-cliente",
+              "feature-flags",
+              "equipo-y-usuarios"
+            ]
+          },
+          {
+            "group": "FAQ",
+            "pages": [
+              "problemas-comunes",
+              "soporte"
+            ]
+          },
+          {
+            "group": "Getting Started",
+            "pages": [
+              "index",
+              "quickstart"
+            ]
+          }
         ]
       }
     ]

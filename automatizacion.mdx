@@ -1,0 +1,209 @@
+---
+title: "Crear Automatización"
+description: "Aprende a configurar una automatización para ejecutar acciones automáticamente cuando ocurra un evento."
+---
+
+# Automatizaciones
+
+Crear una automatización toma solo unos minutos.
+
+Simplemente define **cuándo** debe ejecutarse la regla y **qué acciones** debe realizar automáticamente.
+
+---
+
+## Paso 1. Crear una nueva regla
+
+Desde **Automatizaciones**, haz clic en **Nueva regla**.
+
+<Frame>
+  ![Screenshot 2026 07 16 At 10 22 41](/images/Screenshot-2026-07-16-at-10.22.41.png)
+</Frame>
+
+Se abrirá el editor de automatizaciones.
+
+---
+
+## Paso 2. Asigna un nombre
+
+En la parte superior, escribe un nombre descriptivo.
+
+<Frame>
+  <img
+    src="/images/Screenshot-2026-07-16-at-10.37.13.png"
+    alt="Screenshot 2026 07 16 At 10 37 13"
+    title="Screenshot 2026 07 16 At 10 37 13"
+    style={{ width:"82%" }}
+  />
+</Frame>
+
+Utiliza nombres fáciles de identificar para encontrarlos rápidamente en el futuro.
+
+### Ejemplos
+
+- Cumpleaños
+- 14 días sin venir
+- Cliente VIP
+- 5 visitas seguidas
+- Recordatorio del evento
+- Apertura de puertas
+
+<Tip>
+  Un buen nombre permite identificar inmediatamente qué hace la automatización sin necesidad de abrirla.
+</Tip>
+
+---
+
+## Paso 3. Selecciona el disparador
+
+Ahora debes indicar **cuándo** se ejecutará la regla.
+
+<Frame>
+  <img
+    src="/images/Screenshot-2026-07-16-at-10.37.43.png"
+    alt="Screenshot 2026 07 16 At 10 37 43"
+    title="Screenshot 2026 07 16 At 10 37 43"
+    className="mr-auto"
+    style={{ width:"61%" }}
+  />
+</Frame>
+
+Actualmente puedes elegir entre:
+
+<CardGroup cols={2}>
+  <Card title="Inactividad" icon="clock">
+    Cuando un usuario deje de visitar tu negocio durante cierto número de días.
+  </Card>
+
+  <Card title="Visitas seguidas" icon="badge-check">
+    Cuando un usuario complete varias visitas consecutivas.
+  </Card>
+
+  <Card title="Fecha" icon="calendar">
+    Utiliza un campo de fecha como cumpleaños, aniversario o renovación.
+  </Card>
+
+  <Card title="Hora exacta" icon="alarm-clock">
+    Ejecuta una acción antes o después de una fecha específica.
+  </Card>
+</CardGroup>
+
+---
+
+## Paso 4. Configura la condición
+
+Dependiendo del disparador seleccionado, aparecerán **diferentes** opciones.
+
+Por ejemplo:
+
+### Inactividad
+
+- Días sin actividad.
+- Lectores que cuentan para la condición.
+
+### Visitas seguidas
+
+- Número de visitas consecutivas.
+- Reiniciar el contador al cumplir.
+
+### Fecha
+
+- Campo de fecha.
+- Frecuencia.
+- Días antes o después.
+
+### Hora exacta
+
+- Campo de fecha.
+- Tiempo antes del evento.
+
+---
+
+## Paso 5. Agrega una acción
+
+Haz clic en **Añadir primera acción**.
+
+<Frame>
+  <img
+    src="/images/Screenshot-2026-07-16-at-10.38.56.png"
+    alt="Screenshot 2026 07 16 At 10 38 56"
+    title="Screenshot 2026 07 16 At 10 38 56"
+    style={{ width:"79%" }}
+  />
+</Frame>
+
+Podrás **seleccionar** una o varias acciones.
+
+Actualmente puedes utilizar:
+
+- Notificación Push
+- Modificar Campo
+- Ajustar Lealtad
+- Asignar Recompensa
+
+Puedes agregar varias acciones dentro de la misma automatización.
+
+---
+
+## Paso 6. Activa la automatización
+
+Una vez configurada, activa el interruptor **Activa** ubicado en la parte superior del editor.
+
+Finalmente, presiona **Guardar**.
+
+<Frame>
+  ![Screenshot 2026 07 16 At 10 40 14](/images/Screenshot-2026-07-16-at-10.40.14.png)
+</Frame>
+
+La automatización comenzará a ejecutarse automáticamente cuando se cumpla la condición.
+
+---
+
+# Ejemplo
+
+Supongamos que deseas recuperar clientes que no han regresado.
+
+<Frame>
+  <img
+    src="/images/Screenshot-2026-07-16-at-10.41.23.png"
+    alt="Screenshot 2026 07 16 At 10 41 23"
+    title="Screenshot 2026 07 16 At 10 41 23"
+    style={{ width:"87%" }}
+  />
+</Frame>
+
+**Cuando**
+
+- Inactividad.
+- 14 días sin visitar.
+
+**Entonces**
+
+- Enviar una notificación Push.
+
+Mensaje:
+
+> ¡Te extrañamos! Regresa esta semana y obtén un 15% OFF.
+
+Después de guardar y activar la regla, todos los usuarios que cumplan esa condición recibirán automáticamente la notificación.<br />
+
+---
+
+# Buenas prácticas
+
+<CardGroup cols={2}>
+  <Card title="Un objetivo por regla" icon="check">
+    Mantén cada automatización enfocada en un solo objetivo para facilitar su administración.
+  </Card>
+
+  <Card title="Utiliza nombres claros" icon="text">
+    Nombra las reglas de forma descriptiva para identificarlas rápidamente.
+  </Card>
+
+  <Card title="Prueba antes de activar" icon="lightbulb">
+    Verifica siempre la condición y las acciones antes de habilitar la automatización.
+  </Card>
+
+  <Card title="Combina acciones" icon="tools">
+    Una sola automatización puede enviar una Push, asignar una recompensa y actualizar el pase automáticamente.
+  </Card>
+</CardGroup>
